@@ -33,10 +33,13 @@ Scanner sc = new Scanner(System.in);
 			
 			String sql_sententzia = "UPDATE erabiltzaile_mugimenduak SET kantitatea = kantitatea - ? WHERE izena = ?";
 			String sql_sententzia2 = "UPDATE erabiltzaile_mugimenduak SET kantitatea = kantitatea + ? WHERE izena = ?";
-			try(PreparedStatement ps = c.prepareStatement(sql_sententzia); PreparedStatement ps2 = c.prepareStatement(sql_sententzia)){
+			
+			try(PreparedStatement ps = c.prepareStatement(sql_sententzia); PreparedStatement ps2 = c.prepareStatement(sql_sententzia2)){
+				
 				ps.setInt(1, kantitatea);
 				ps.setString(2, emanIzena);
 				int filasAfectadas = ps.executeUpdate();
+				
 				ps2.setInt(1, kantitatea);
 				ps2.setString(2, jasoIzena);
 				int filasAfectadas2 = ps2.executeUpdate();
