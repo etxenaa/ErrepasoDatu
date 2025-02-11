@@ -6,12 +6,40 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/2AM3-6/Desktop/Jars/commons-lang3-3.8.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/2AM3-6/Desktop/Jars/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/2AM3-6/Desktop/Jars/h2-2.3.232.jar"/>
-	<classpathentry kind="lib" path="C:/Users/2AM3-6/Desktop/Jars/jackcess-3.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/2AM3-6/Desktop/Jars/mysql-connector-java-8.0.17 (1).jar"/>
-	<classpathentry kind="lib" path="C:/Users/2AM3-6/Desktop/Jars/ucanaccess-5.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/2AM3-6/Desktop/Jars/hsqldb-2.5.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/AIMAR - MARKEL/Downloads/mysql-connector-java-8.0.17 (3).jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/AIMAR - MARKEL/Downloads/jackcess-3.0.1.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/AIMAR - MARKEL/Downloads/h2-2.3.232.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/AIMAR - MARKEL/Downloads/commons-lang3-3.8.1.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/AIMAR - MARKEL/Downloads/commons-logging-1.2.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/AIMAR - MARKEL/Downloads/ucanaccess-5.0.1.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/AIMAR - MARKEL/Downloads/hsqldb-2.5.0.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

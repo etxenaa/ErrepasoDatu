@@ -27,7 +27,7 @@ public class ariketa {
 		try {
 			c = DriverManager.getConnection(urlConnection, db_erabiltzailea, db_pasahitza);
 
-			stmt = c.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+			stmt = c.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
 
 			String query = "SELECT izena, kantitatea, timestamp FROM erabiltzaile_mugimenduak";
 			rs = stmt.executeQuery(query);
@@ -84,7 +84,10 @@ public class ariketa {
 
 					ps.executeUpdate();
 					ps.close();
+					rs.close();
+					stmt.close();
 
+					stmt = c.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
 					rs = stmt.executeQuery(query);
 
 					rs.absolute(posicion2);
