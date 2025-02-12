@@ -14,7 +14,7 @@ public class ariketaAccess {
 		ResultSet rs = null;
 		try {
 			c = DriverManager.getConnection("jdbc:ucanaccess://access-sample.mdb");
-			Statement s = c.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+			Statement s = c.createStatement();
 			
 			String sql_sententzia = "SELECT category_id, name FROM category ORDER BY name DESC";
 			
